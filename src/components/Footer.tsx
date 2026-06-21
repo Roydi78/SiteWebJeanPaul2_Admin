@@ -23,7 +23,7 @@ export default function Footer({ onNavigate }: FooterProps) {
               </div>
               <div>
                 <div className="text-white font-semibold font-playfair">Unité Pastorale</div>
-                <div className="text-amber-400 text-xs tracking-wider uppercase">Saint Jean-Paul II</div>
+                <div className="text-amber-400 text-xs tracking-wider uppercase">Jean-Paul II</div>
               </div>
             </div>
             <p className="text-stone-400 text-sm leading-relaxed max-w-sm">
@@ -90,7 +90,7 @@ export default function Footer({ onNavigate }: FooterProps) {
 
         <div className="border-t border-stone-800 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-stone-500 text-xs">
-            © {new Date().getFullYear()} Unité Pastorale Saint Jean-Paul II. Tous droits réservés.
+            © {new Date().getFullYear()} Unité Pastorale Jean-Paul II. Tous droits réservés.
           </p>
           <button
             onClick={() => handleNav('liens')}

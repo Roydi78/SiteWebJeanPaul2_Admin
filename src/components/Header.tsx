@@ -55,7 +55,7 @@ export default function Header({ currentPage, onNavigate }: HeaderProps) {
                 Unité Pastorale
               </div>
               <div className="text-amber-400 text-xs font-inter font-medium tracking-wider uppercase">
-                Saint Jean-Paul II
+                Jean-Paul II
               </div>
             </div>
           </button>
