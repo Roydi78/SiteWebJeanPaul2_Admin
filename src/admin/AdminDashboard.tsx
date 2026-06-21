@@ -4,10 +4,11 @@ import { supabase } from '../lib/supabase';
 import AdminActualites from './sections/AdminActualites';
 import AdminAgenda from './sections/AdminAgenda';
 import AdminMesses from './sections/AdminMesses';
+//import AdminSacrements from './sections/AdminSacrements';
 import AdminLiens from './sections/AdminLiens';
 import AdminSettings from './sections/AdminSettings';
 
-type Tab = 'actualites' | 'agenda' | 'messes' | 'liens' | 'settings';
+type Tab = 'actualites' | 'agenda' | 'messes' | 'sacrements' | 'liens' | 'settings';
 
 const TABS: { id: Tab; label: string; icon: React.ElementType }[] = [
   { id: 'actualites', label: 'Actualités', icon: Newspaper },

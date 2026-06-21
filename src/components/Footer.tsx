@@ -65,11 +65,11 @@ export default function Footer({ onNavigate }: FooterProps) {
             <ul className="space-y-3">
               <li className="flex items-start gap-2 text-sm text-stone-400">
                 <MapPin size={15} className="mt-0.5 text-amber-500 shrink-0" />
-                <span>Secrétariat paroissial<br />Rue de l'Église, 1<br />Belgique</span>
+                <span>Secrétariat paroissial<br />Rue de l'Église, 1<br />Moncton, NB</span>
               </li>
               <li className="flex items-center gap-2 text-sm text-stone-400">
                 <Phone size={15} className="text-amber-500 shrink-0" />
-                <span>+32 (0)xxx xx xx xx</span>
+                <span>+1 (506)xxx xx xx xx</span>
               </li>
               <li className="flex items-center gap-2 text-sm text-stone-400">
                 <Mail size={15} className="text-amber-500 shrink-0" />
@@ -77,13 +77,13 @@ export default function Footer({ onNavigate }: FooterProps) {
               </li>
             </ul>
             <a
-              href="https://www.catholique.be"
+              href="https://www.catholique.ca"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 mt-5 text-xs text-stone-500 hover:text-amber-400 transition-colors"
             >
               <ExternalLink size={12} />
-              Église catholique en Belgique
+              Église catholique
             </a>
           </div>
         </div>

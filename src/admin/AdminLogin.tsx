@@ -54,7 +54,7 @@ export default function AdminLogin({ onLogin }: Props) {
               onChange={(e) => setEmail(e.target.value)}
               required
               className="w-full bg-stone-700 border border-stone-600 text-white rounded-lg px-4 py-3 text-sm font-inter focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent placeholder-stone-500"
-              placeholder="admin@paroisse.be"
+              placeholder="admin@paroisse.ca"
             />
           </div>
 

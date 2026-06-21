@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { ChevronDown, Calendar, Clock, BookOpen, Users, Church, ArrowRight } from 'lucide-react';
 import { supabase, type Actualite, type SiteSetting } from '../lib/supabase';
 import type { Page } from '../types';
+import BgImg from '../assets/pexels-photo-208216.jpg';
 
 interface AccueilProps {
   onNavigate: (page: Page) => void;
@@ -44,7 +45,7 @@ export default function Accueil({ onNavigate }: AccueilProps) {
       <section
         className="relative min-h-screen flex flex-col items-center justify-center text-center px-4"
         style={{
-          backgroundImage: `linear-gradient(to bottom, rgba(28,25,23,0.65) 0%, rgba(28,25,23,0.5) 60%, rgba(28,25,23,0.9) 100%), url('https://images.pexels.com/photos/208216/pexels-photo-208216.jpeg?auto=compress&cs=tinysrgb&w=1600')`,
+          backgroundImage: `linear-gradient(to bottom, rgba(28,25,23,0.65) 0%, rgba(28,25,23,0.5) 60%, rgba(28,25,23,0.9) 100%), url(${BgImg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -164,7 +165,7 @@ export default function Accueil({ onNavigate }: AccueilProps) {
                     <div className="flex items-center justify-between mb-4">
                       <span className="text-xs font-inter font-medium text-amber-600 bg-amber-50 px-3 py-1 rounded-full">{a.categorie}</span>
                       <time className="text-stone-400 text-xs font-inter">
-                        {new Date(a.date_article).toLocaleDateString('fr-BE', { day: 'numeric', month: 'long' })}
+                        {new Date(a.date_article).toLocaleDateString('fr-CA', { day: 'numeric', month: 'long' })}
                       </time>
                     </div>
                     <h3 className="font-playfair text-xl text-stone-900 mb-3 group-hover:text-amber-700 transition-colors">{a.titre}</h3>

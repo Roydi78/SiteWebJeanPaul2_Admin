@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Clock, MapPin } from 'lucide-react';
 import { supabase, type AgendaEvent } from '../lib/supabase';
+import CoverImg from '../assets/pexels-photo-5040009.jpg';
 
 const typeColors: Record<string, string> = {
   Liturgie: 'bg-amber-100 text-amber-800',
@@ -48,7 +49,7 @@ export default function Agenda() {
       <div
         className="relative pt-40 pb-20 px-4 text-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(28,25,23,0.72), rgba(28,25,23,0.72)), url('https://images.pexels.com/photos/1028725/pexels-photo-1028725.jpeg?auto=compress&cs=tinysrgb&w=1600')`,
+          backgroundImage: `linear-gradient(rgba(28,25,23,0.72), rgba(28,25,23,0.72)), url(${CoverImg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

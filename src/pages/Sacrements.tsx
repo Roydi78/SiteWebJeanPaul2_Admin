@@ -1,10 +1,14 @@
 import { ArrowRight, Phone, Mail } from 'lucide-react';
+import CoverImg from '../assets/pexels-0893710.jpg';
+
+
+//créer une table de sacrements dans la base de données avec les champs suivants : id, nom, icone, image, description, demarches (array of text)
 
 const sacrements = [
   {
     nom: 'Baptême',
     icone: '💧',
-    image: 'https://images.pexels.com/photos/3951628/pexels-photo-3951628.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/32567257/pexels-photo-32567257.jpeg?auto=compress&cs=tinysrgb&w=800',
     description: 'Le baptême est la porte d\'entrée dans la vie chrétienne et dans la communauté de l\'Église. Il peut être célébré pour les enfants comme pour les adultes.',
     demarches: [
       'Contacter le secrétariat paroissial au moins 3 mois à l\'avance.',
@@ -15,7 +19,7 @@ const sacrements = [
   {
     nom: 'Eucharistie (1ère communion)',
     icone: '✝️',
-    image: 'https://images.pexels.com/photos/267559/pexels-photo-267559.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/13707667/pexels-photo-13707667.jpeg?auto=compress&cs=tinysrgb&w=800',
     description: 'La première communion marque une étape importante dans le parcours de foi d\'un enfant. Elle est préparée sur plusieurs années à travers la catéchèse.',
     demarches: [
       'S\'inscrire à la catéchèse dès la 3e primaire.',
@@ -26,7 +30,7 @@ const sacrements = [
   {
     nom: 'Confirmation',
     icone: '🕊️',
-    image: 'https://images.pexels.com/photos/1181435/pexels-photo-1181435.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/32567266/pexels-photo-32567266.jpeg?auto=compress&cs=tinysrgb&w=800',
     description: 'La confirmation achève les sacrements d\'initiation chrétienne. Elle renforce la grâce du baptême et fortifie le confirmé par les dons de l\'Esprit Saint.',
     demarches: [
       'Suivre le parcours de préparation proposé pour les jeunes (secondaire).',
@@ -59,7 +63,7 @@ const sacrements = [
   {
     nom: 'Onction des malades',
     icone: '🕯️',
-    image: 'https://images.pexels.com/photos/1028725/pexels-photo-1028725.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/18951918/pexels-photo-18951918.jpeg?auto=compress&cs=tinysrgb&w=800',
     description: 'Ce sacrement apporte réconfort, paix et courage à ceux qui sont éprouvés par la maladie ou la vieillesse. Il peut être administré à domicile ou en institution.',
     demarches: [
       'Contacter le secrétariat ou directement un prêtre en cas d\'urgence.',
@@ -76,7 +80,7 @@ export default function Sacrements() {
       <div
         className="relative pt-40 pb-20 px-4 text-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(28,25,23,0.72), rgba(28,25,23,0.72)), url('https://images.pexels.com/photos/256150/pexels-photo-256150.jpeg?auto=compress&cs=tinysrgb&w=1600')`,
+          backgroundImage: `linear-gradient(rgba(28,25,23,0.72), rgba(28,25,23,0.72)), url(${CoverImg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -128,9 +132,9 @@ export default function Sacrements() {
             Nous sommes là pour vous accompagner dans votre démarche.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <a href="tel:+32xxxxx" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 px-5 py-3 rounded-lg text-sm font-inter transition-colors">
+            <a href="tel:+1506xxxxxx" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 px-5 py-3 rounded-lg text-sm font-inter transition-colors">
               <Phone size={15} className="text-amber-400" />
-              +32 (0)xxx xx xx xx
+              +1 (506)xxx xx xx xx
             </a>
             <a href="mailto:info@unitejeanpaul2.com" className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 px-5 py-3 rounded-lg text-sm font-inter transition-colors">
               <Mail size={15} className="text-amber-400" />

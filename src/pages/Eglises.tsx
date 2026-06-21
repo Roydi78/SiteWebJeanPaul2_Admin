@@ -1,4 +1,5 @@
 import { MapPin, Clock, Phone } from 'lucide-react';
+import CoverImg from '../assets/pexels-saarteaga-18038388.jpg';
 
 const eglises = [
   {
@@ -43,9 +44,9 @@ export default function Eglises() {
       <div
         className="relative pt-40 pb-20 px-4 text-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(28,25,23,0.72), rgba(28,25,23,0.72)), url('https://images.pexels.com/photos/256150/pexels-photo-256150.jpeg?auto=compress&cs=tinysrgb&w=1600')`,
+          backgroundImage: `linear-gradient(rgba(28,25,23,0.72), rgba(28,25,23,0.72)), url(${CoverImg})`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundPosition: 'top',
         }}
       >
         <p className="text-amber-400 text-xs uppercase tracking-widest font-inter font-medium mb-3">Patrimoine</p>

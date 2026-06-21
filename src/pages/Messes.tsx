@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Clock, MapPin, Info } from 'lucide-react';
 import { supabase, type Eglise, type MesseHoraire } from '../lib/supabase';
+import CoverImg from '../assets/pexels-photo-236339.jpg';
 
 export default function Messes() {
   const [eglises, setEglises] = useState<Eglise[]>([]);
@@ -36,7 +37,7 @@ export default function Messes() {
       <div
         className="relative pt-40 pb-20 px-4 text-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(28,25,23,0.72), rgba(28,25,23,0.72)), url('https://images.pexels.com/photos/1353238/pexels-photo-1353238.jpeg?auto=compress&cs=tinysrgb&w=1600')`,
+          backgroundImage: `linear-gradient(rgba(28,25,23,0.72), rgba(28,25,23,0.72)), url(${CoverImg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

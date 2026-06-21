@@ -1,4 +1,6 @@
 import { Users, ArrowRight, Mail } from 'lucide-react';
+import CoverImg from '../assets/pexels-photo-1181435.jpg';
+
 
 const groupes = [
   {
@@ -108,7 +110,7 @@ export default function Groupes() {
       <div
         className="relative pt-40 pb-20 px-4 text-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(28,25,23,0.72), rgba(28,25,23,0.72)), url('https://images.pexels.com/photos/1181435/pexels-photo-1181435.jpeg?auto=compress&cs=tinysrgb&w=1600')`,
+          backgroundImage: `linear-gradient(rgba(28,25,23,0.72), rgba(28,25,23,0.72)), url(${CoverImg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

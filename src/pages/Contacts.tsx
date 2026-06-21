@@ -1,4 +1,5 @@
 import { MapPin, Phone, Mail, Clock, User } from 'lucide-react';
+import CoverImg from '../assets/pexels-mart-production-7218369.jpg';
 
 const equipe = [
   {
@@ -38,7 +39,7 @@ export default function Contacts() {
       <div
         className="relative pt-40 pb-20 px-4 text-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(28,25,23,0.72), rgba(28,25,23,0.72)), url('https://images.pexels.com/photos/1028725/pexels-photo-1028725.jpeg?auto=compress&cs=tinysrgb&w=1600')`,
+          backgroundImage: `linear-gradient(rgba(28,25,23,0.72), rgba(28,25,23,0.72)), url(${CoverImg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

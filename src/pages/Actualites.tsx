@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Calendar, Tag } from 'lucide-react';
 import { supabase, type Actualite } from '../lib/supabase';
+import CoverImg from '../assets/pexels-photo-7219522.jpg';
 
 const CATEGORIES = ['Tout', 'Liturgie', 'Formation', 'Événement', 'Annonce', 'Jeunesse'];
 
@@ -28,7 +29,7 @@ export default function Actualites() {
       <div
         className="relative pt-40 pb-20 px-4 text-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(28,25,23,0.75), rgba(28,25,23,0.75)), url('https://images.pexels.com/photos/1353238/pexels-photo-1353238.jpeg?auto=compress&cs=tinysrgb&w=1600')`,
+          backgroundImage: `linear-gradient(rgba(28,25,23,0.75), rgba(28,25,23,0.75)),url(${CoverImg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -102,12 +103,12 @@ export default function Actualites() {
                 <div className="p-6">
                   <div className="flex items-center gap-1.5 text-stone-400 text-xs font-inter mb-3">
                     <Calendar size={12} />
-                    {new Date(a.date_article).toLocaleDateString('fr-BE', { day: 'numeric', month: 'long', year: 'numeric' })}
+                    {new Date(a.date_article).toLocaleDateString('fr-CA', { day: 'numeric', month: 'long', year: 'numeric' })}
                   </div>
                   <h2 className="font-playfair text-xl text-stone-900 mb-3 group-hover:text-amber-700 transition-colors leading-snug">
                     {a.titre}
                   </h2>
-                  <p className="text-stone-500 text-sm font-inter leading-relaxed line-clamp-3">{a.extrait}</p>
+                  <p className="text-stone-500 text-sm font-inter leading-relaxed line-clamp-5">{a.extrait}</p>
                 </div>
               </article>
             ))}
